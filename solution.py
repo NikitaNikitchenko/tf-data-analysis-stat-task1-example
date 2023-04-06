@@ -10,6 +10,5 @@ def solution(x: np.array) -> float:
     # Не меняйте название функции и её аргументы
     
     
-    mean = x.mean()
-    var = x.var()
-    return 0.5*np.log((mean-743)**4 / (var/len(x)+(mean-743)**2)) # Ваш ответ
+    y = x -743
+    return np.log(y).mean()# Ваш ответ
